@@ -1,6 +1,0 @@
-output: 1_Planck2018_BAOdr12_LCDM6p
-post:
-  suffix: _h0ries2020
-  add:
-    likelihood:
-      H0.riess2020: null
