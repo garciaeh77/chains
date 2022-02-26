@@ -1,0 +1,10 @@
+output: 1_Planck2018_LCDM_w_mcmc
+post:
+  suffix: h0dec2021
+  add:
+    likelihood:
+      my_H0:
+        external: 'lambda _self: -0.5 * (_self.provider.get_param("H0") - 73.04)**2 / (1.04)**2'
+        requires: ["H0"]
+
+
