@@ -1,0 +1,6 @@
+output: planck2018_lcdm
+post:
+  suffix: _h0ries2020
+  add:
+    likelihood:
+      H0.riess2020: null

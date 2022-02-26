@@ -1,0 +1,10 @@
+output: planck2018_lcdm
+post:
+  suffix: canac_mnu
+  add:
+    likelihood:
+      my_sigma8:
+        external: 'lambda _self: -0.5*(((_self.provider.get_param("sigma8")*(_self.provider.get_param("omegam"))**(0.3)/(0.27)**0.3)-0.764)**2/0.023**2)'
+        requires: ["sigma8","omegam"]
+    params:
+      mnu:
