@@ -1,0 +1,8 @@
+output: 1_Planck2018_LCDM_w_mnu_mcmc_2ndtr
+post:
+  suffix: h0_justmnu
+  add:
+    likelihood:
+      H0.riess2020: null
+  remove:
+    w:
